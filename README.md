@@ -9,6 +9,8 @@ This project can be installed using Composer as `humanmade/remove-class-filter`.
 ## Usage
 
 ```php
+use function HM_Remove_Class_Filter\remove_class_filter;
+
 // Remove LSD_Admin::block_admin from the admin_init action (default priority).
 remove_class_filter( 'admin_init', 'LSD_Admin', 'block_admin' );
 ```
